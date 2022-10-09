@@ -1,0 +1,82 @@
+
+#basic string learning
+
+#what is name?
+def Hello():
+    name = input('whats your name? (full name)' )
+
+#clean name up
+    name = name.strip().capitalize()
+
+#split first & last name
+    first, last = name.split(" ")
+
+#return welcome
+    print(f'Hello, {first}', sep='  ', end='')
+    print(' u have big penis')
+
+#what is favourite food?
+    favouriteFood = input('Hey what is your favourite food? ')
+
+#return favFood
+    print('Yer, you like to eat', favouriteFood, name, 'dont you?')
+
+Hello()
+
+# In[1]:
+
+
+#calculator
+
+def Calculator():
+    #call def & take inputs (float)
+    cal(input('add or div? '), float(input('what is x? ')), float(input('what is y? ')))
+
+
+def cal(addDiv,x,y):
+#different calc process
+    add = float(x + y)
+    div = float(x / y)
+
+#return result (:.x = to how many decimal places)
+    if addDiv == 'div':
+        print(f"{div:.4}")
+
+    elif addDiv == 'add':
+        print(f"{add:.4} ")
+
+    elif addDiv != 'add'or'div':
+        print('Miss INPUT!')
+
+
+Calculator()
+
+
+# In[ ]:
+
+
+#Crafting a Function
+
+#bulk of code
+def WhatIsName():
+    name = input("whats your name? (Full Name)")
+#run function
+    hello(name)
+
+
+
+#def deine a function()
+def hello(to='buddy olpal'):
+    to = to.strip().title()
+
+#split first & last name
+    first, last = to.split(" ")
+
+#return welcome
+    print(f'Hello, {first}', end='')
+    print(' u have big penis')
+
+
+WhatIsName()
+
+#very nice
