@@ -23,9 +23,6 @@ def Hello():
 
 Hello()
 
-# In[1]:
-
-
 #calculator
 
 def Calculator():
@@ -50,9 +47,6 @@ def cal(addDiv,x,y):
 
 
 Calculator()
-
-
-# In[ ]:
 
 
 #Crafting a Function
