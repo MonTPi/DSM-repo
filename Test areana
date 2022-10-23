@@ -1,7 +1,18 @@
 def main():
- for edgeRunner in edgeRunner:
-  print(edgeRunner, edgeRunner[edgeRunner], sep=',' )
+  column(int(input('how high? ')))
+  row(int(input('how long? ')))
+  block(int(input('how big? ')))
 
-edgeRunner = {'dave':'super suit','jack': 'Hacker', 'josh': 'mega penis'}
+def column(hight):
+    for _ in range(hight):
+     print('#')
+
+def row(length):
+    print('|?|' * length )
+
+def block(size):
+    for _ in range(size):
+     print("#" * size, sep=' ')
 
 main()
+
