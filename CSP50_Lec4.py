@@ -1,9 +1,53 @@
+
+
+
+#____ meow loops meow while X < 5
+def loopmeow():
+    # x starts @ 0 by convention
+    x = 0
+    while x < 5:
+     print('meow')
+    # x += 1 == x = x+1
+     x += 1
+
+
+loopmeow()
+     
+
+#____ 4Meow loop recreates the above loop using a list
+for _ in range(3):
+    print("meow")
+
+print('meow\n' * 3, end="")
+
+#____ looped 'get n' error message + Meow function
+
+def getnumber():
+    while True:
+      n = int(input('How many meows?'))
+      if n > 0:
+        break
+    return n
+
 def main():
-    while x>0:
-        print('meow')
-        x = x-1
+    meow(getnumber())
 
-
-x = input(int()) 
+def meow(n):
+    for _ in range(n):
+     print('meow')
 
 main()
+
+# ____ list - cyber punk
+
+edgeRunners = ['dave','jack', 'josh']
+
+print(edgeRunners[2])
+
+# ____ list - cyber punk
+
+edgeRunners = ['dave','jack', 'josh']
+
+for edgeRunners in edgeRunners :
+    print(edgeRunners)
+    
