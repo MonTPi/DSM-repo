@@ -60,6 +60,53 @@ for i in range(len(edgeRunners)):
 #second list to link.
 mods = ['super suit', 'hacker', 'mega penis']
 
+#Dictionary
 edgeRunner = {'dave':"super suit",'jack': "Hacker", 'josh': 'mega penis'}
+#prints dave's dictionary term
+print(edgeRunner["dave"]) 
+#for i (conditional var) in dictionary, print i & print dictionary item, seperate with 'x'
+def main():
+ for Runner in edgeRunner:
+  print(Runner , edgeRunner[Runner], sep=(' has power: '))
 
-print(edgeRunner["dave"])
+#Var assigned to dictionary
+edgeRunner = {'dave':'super suit','jack': 'Hacker', 'josh': 'mega penis'}
+
+main()
+
+## Multi point dictionary, seperate lines for readabillity using \, None = no value, this is a list of dictionaries.
+ER = [\
+    {"name":"Dave", "power":"super suit", "role":"main character"},\
+    {"name":"jack", "power":"hacker", "role":"side character"},\
+    {"name":"Josh", "power":"mega penis", "role": None}
+]
+#calling dicrtionary definiation in list 
+for R in ER:
+    print(R["name"], R["power"], R["role"], sep=", ")
+
+
+## super mario blocks
+#Lets call the level design
+def main():
+  column(int(input('how high? ')))
+  row(int(input('how long? ')))
+  block(int(input('how big? ')))
+
+# using a for loop based on input. each loop concatanates the code.
+def column(hight):
+    for _ in range(hight):
+     print('#')
+
+#using a python string * var set up to produce a single row string.
+def row(length):
+    print('|?|' * length )
+
+#using both to create a x by x block.
+def block(size):
+    #sets hight
+    for _ in range(size):
+    #sets length
+     print("# " * size)
+
+main()
+

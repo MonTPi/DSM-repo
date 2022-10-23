@@ -1,18 +1,15 @@
 def main():
-  column(int(input('how high? ')))
-  row(int(input('how long? ')))
-  block(int(input('how big? ')))
+     x = get_int()
+     print(f"x is {x}")
 
-def column(hight):
-    for _ in range(hight):
-     print('#')
+def get_int():
+    while True:
+        try:
+            return int(input('what is number? '))
+        except ValueError:
+#Soft nudge rather than error message: pass (begins the next loop)
+            pass
 
-def row(length):
-    print('|?|' * length )
-
-def block(size):
-    for _ in range(size):
-     print("#" * size, sep=' ')
-
+        
 main()
 
