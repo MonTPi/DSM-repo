@@ -1,0 +1,7 @@
+def main():
+ for edgeRunner in edgeRunner:
+  print(edgeRunner, edgeRunner[edgeRunner], sep=',' )
+
+edgeRunner = {'dave':'super suit','jack': 'Hacker', 'josh': 'mega penis'}
+
+main()

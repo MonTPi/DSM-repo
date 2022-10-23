@@ -50,4 +50,16 @@ edgeRunners = ['dave','jack', 'josh']
 
 for edgeRunners in edgeRunners :
     print(edgeRunners)
-    
+
+#for variable i in.. = i = 0, then i = 1, then i = 2. 
+#range = how many am I going to name? len prodivdes and int value required for range
+for i in range(len(edgeRunners)):
+    print(i+1,edgeRunners[i])
+
+#dictionary - associate a list with something else. AKA words with deffinitions.
+#second list to link.
+mods = ['super suit', 'hacker', 'mega penis']
+
+edgeRunner = {'dave':"super suit",'jack': "Hacker", 'josh': 'mega penis'}
+
+print(edgeRunner["dave"])
