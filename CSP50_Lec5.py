@@ -6,7 +6,7 @@ import string
 from symbol import try_stmt
 
 
-print('hello, world)
+print('hello, world')
 #FIX - check error & fix
 
 ###Value (input) error:
@@ -19,7 +19,7 @@ try:
     x = int(input('what is number?'))
     #print will not fail.. do not include in try:
     print(f"x is {x}")
-    except ValueError:
+except ValueError:
     print("X must be number not text")
 
 ##IMPROVE
