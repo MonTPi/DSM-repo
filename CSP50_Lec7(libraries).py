@@ -51,8 +51,6 @@ try:
 except IndexError:
     print("needs an augument")
 
-print(len(sys.argv))
-
 ##Can we remove all the error checks from the main code we are interested in.
 #error checks
 if len(sys.argv) == 3 :
@@ -60,12 +58,55 @@ if len(sys.argv) == 3 :
 elif len(sys.argv) < 2 :
     sys.exit("too few")
 
-#code interested in
-for arg in sys.argv:
+#code interested in #see argv[1: ] starts at 1 not 0 , :-1 would remove somone from the end
+for arg in sys.argv[1: ]:
     print('Hello, ' , arg)
 
-for arg in sys.argv:
-    print("i")
+##Lets install packages other than the pre made sets
+#3rd party functions can be called by importing packages
+#pyPI = pypi.org is home to many
+
+import cowsay
+
+import sys
+
+if len(sys.argv) == 2:
+    cowsay.trex("hello" + sys.argv[1])
+
+#python -m pip install
+##Shift^ + command + P 
+## python select interpretor
+
+###API's
+##pulling a txt file from a website api, search the documentation for the api
+#often this will be a url 
+#Json files are text formatted in a specific way
+
+#for api
+import requests
+# for command line intrerface
+import sys
+#helps to format json files
+import json
+
+print(response['kind'])
+
+##exits program if incorrectly formatted
+if len(sys.argv) != 2:
+    sys.exit()
+##attempts to make a request for data on a song, stores as var
+response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term=" + sys.argv[1])
+print(json.dumps(response.json(), indent = 2))
+
+
+
+
+
+
+
+
+
+
 
 
 
