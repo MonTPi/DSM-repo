@@ -10,4 +10,4 @@ def git_go(m):
 
 
 if __name__ == "__main__":
-    git_go('Title: ')
+    git_go("Test")
