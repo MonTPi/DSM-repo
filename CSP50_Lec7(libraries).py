@@ -107,6 +107,5 @@ for result in o['results'] :
 
 import git_go 
 
-git_go("test")
-
+git_go()
 
