@@ -9,3 +9,5 @@ def git_go(m):
     subprocess.call(['git', 'push', 'origin', 'main'])
     subprocess.call(['git','status'])
 git_go('Title: ')
+
+#nit uptodate
