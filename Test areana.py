@@ -1,6 +1,6 @@
 from gitGo import git_go
 
-git_go('Test')
+git_go()
 
 
 
