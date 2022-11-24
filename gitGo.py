@@ -7,6 +7,7 @@ def git_go():
     subprocess.call(['git','status'])
     subprocess.call(['git', 'push', 'origin', 'main'])
     subprocess.call(['git','status'])
+    
 
 
 if __name__ == "__main__":
